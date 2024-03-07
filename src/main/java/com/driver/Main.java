@@ -4,8 +4,9 @@ public class Main {
 
     public static void main(String[] arg) {
         RWOnly rwOnly = new RWOnly();
-        // The field rwOnly.member is not visible.
-        rwOnly.setMember("KD");
-        System.out.println(rwOnly.getMember());
+        rwOnly.setName("KD");
+        System.out.println(rwOnly.getName());
+       //name has private access in com.driver.RWOnly
+
     }
 }
